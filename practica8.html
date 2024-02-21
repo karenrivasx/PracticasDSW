@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 8</title>
+  </head>
+  <body>
+    <h1 align="center">Mi primer formulario</h1>
+    <form align="center" method="get">
+      Nombre: <input type="text" name="nombre" placeholder="No mayor a 10 caracteres" /><br/><br/>
+      Edad: <input type="number" name="edad" min="18" max="100"/><br/><br/>
+      Sexo:
+      <select name="sexo">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Maculino</option>
+      </select><br/><br/>
+      <input type="radio" name="leer"/>Leer <br/><br/>
+      <input type="radio" name="camninar"/>Caminar <br/><br/>
+      <input type="checkbox" name="acuerdo" checked/>De acuerdo <br/><br/>
+      <input type="submit" name="enviar" /><br/><br/>
+      Comentarios: <textarea rows="6" name="Comentarios"></textarea>
+    </form>
+  </body>
+</html>
