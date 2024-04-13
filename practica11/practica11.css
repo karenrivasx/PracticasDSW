@@ -1,0 +1,59 @@
+*{
+    background: #FEFFBD;
+    padding: 0;
+    margin: 0;
+   
+   }
+   
+   header, nav, footer, #contenedor
+   {
+     width: 100%;
+   
+   }
+   body
+   {
+     height: 100vh;
+   }
+   header
+   {
+     height: 10%;
+     background: #CDFF5A ;
+     border: 1px solid black;
+   }
+   footer
+   {
+     height: 10%;
+     background: #FFAAFE;
+     border: 1px solid black;
+   }
+   nav
+   {
+     height: 5%;
+     background: #84BD00;
+     margin-top: 10px;
+     border: 1px solid black;
+   }
+   #contenedor
+   {
+     display: flex;
+     height: 75%;
+     justify-content: space-around;
+     margin-top: 10px;
+   }
+   article, section
+   {
+     height: 90%;
+     border: 1px solid black;
+   }
+   article
+   {
+     width: 20%;
+     background: #00A3BD;
+   }
+   section
+   {
+     border: 1px solid black;
+     width: 50%;
+     background: #FDFF67;
+   
+   }
