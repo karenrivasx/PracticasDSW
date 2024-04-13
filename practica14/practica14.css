@@ -1,0 +1,40 @@
+#gato
+{
+    width: 5cm;
+    height: 56mm;
+}
+#perro
+{
+    width: 3.5in;
+    height: 200px;
+}
+#conejo
+{
+    width: 170pt;
+    height: 18pc;
+}
+#pajaro
+{
+    width: 17em;
+    height: 40ex;
+}
+#pez
+{
+    width: 17rem;
+    height: 20rem;
+}
+#caballo
+{
+    width: 17vw;
+    height: 23vw;
+}
+#delfin
+{
+    width: 40vh;
+    height: 40vh;
+}
+#jirafa
+{
+    width: 20vmin;
+    height: 20vmax;
+}
