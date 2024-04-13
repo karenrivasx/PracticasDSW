@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Practica 28</title>
+        <h1>KR</h1>
+        <!--<script type="text/javascript" src="js/practica28.js"></script> -->
+    </head>
+    <body onload="agregarAsignaturas()">
+
+        <h2>Registro de notas</h2>
+        
+        <div id="asignaturas"></div>
+        <button onclick="calcularPromedio()">Calcular promedio</button>
+        
+        <script>
+            let totalAsignaturas = 8;
+            let nombresAsignaturas = ['Python', 'Programacion visual', 'Implantacion de software', 'Administracion de la funcion informatica', 'Aministracion de proyectos', 'Desarrollo de emprenderores', 'Ciencia de datos', 'Ingles II'];
+            
+            function agregarAsignaturas() {
+                let contenedor = document.getElementById('asignaturas');
+                for (let i = 0; i < totalAsignaturas; i++) {
+                    contenedor.innerHTML += nombresAsignaturas[i] + ': <input type="number" id="nota' + i + '" class="asignatura"><br>';
+                }
+            }
+            
+            function calcularPromedio() {
+                let sumaNotas = 0;
+                let nota;
+                let notasValidas = true;
+            
+                for (let i = 0; i < totalAsignaturas; i++) {
+                    nota = parseFloat(document.getElementById('nota' + i).value);
+                    if (isNaN(nota) || nota < 0 || nota > 100) {
+                        alert('Nota no valida para ' + nombresAsignaturas[i]);
+                        document.getElementById('nota' + i).focus();
+                        notasValidas = false;
+                        break;
+                    } else if (document.getElementById('nota' + i).value === '') {
+                        alert('captura la nota para ' + nombresAsignaturas[i]);
+                        document.getElementById('nota' + i).focus();
+                        notasValidas = false;
+                        break;
+                    }
+                    sumaNotas += nota;
+                    alert('En ' + nombresAsignaturas[i] + ' sacaste ' + nota);
+                }
+            
+                if (notasValidas) {
+                    let promedio = sumaNotas / totalAsignaturas;
+                    alert('El promedio final es: ' + promedio);
+                    if (promedio > 85) {
+                        alert('Exento de ordinario');
+                    } else {
+                        alert('Debes hacer examen ordinario');
+                    }
+                }
+            }
+        </script> 
+    </body>
+</html>
