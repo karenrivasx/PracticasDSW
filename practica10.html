@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica 10</title>
+    </head>
+    
+    <body>
+        <table border = "1" cellspacing="2">
+            <form>
+                <tr>
+                    <th align="center" colspan="2">Mi primer formulario</th>
+                </tr>
+                <tr>
+                    <th align="right">Nombre: </th>
+                    <td><input type="text" placeholder="No mayor a 50 caracteres"></td>
+                </tr>
+                <tr>
+                    <th align="right">Carrera que estudias: </th>
+                    <td><select name="carreras" id="carreras" size="2">
+                        <option value="LI">Informática</option>
+                        <option value="LAE">Administración de Empresas</option>
+                        <option value="LC">Contaduría</option>
+                        <option value="LNI">Negocios Internacionales</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <th align="right">Horario: </th>
+                    <td><input type="radio">Matutino <br/>
+                        <input type="radio" autofocus>Vespertino</td>
+                </tr>
+                <tr>
+                    <th align="right">Comentarios de la carrera: </th>
+                    <td><textarea name="comentarios" rows="6" cols="50" placeholder="No mayor a 150 caracteres"></textarea></td>
+                </tr>
+                <tr>
+                    <th align="right">Edad: </th>
+                    <td><input type="number" name="edad" min="18" max="80"/></td>
+                </tr>
+                <tr>
+                    <th align="right">Especialidades que te gustan: </th>
+                    <td><input type="checkbox" id="cbox1" value="Redes"/>redes<br/>
+                        <input type="checkbox" id="cbox2" value="Programacion"/>programacion<br/>
+                        <input type="checkbox" id="cbox3" value="Ciberseguridad"/>ciberseguridad<br/>
+                        <input type="checkbox" id="cbox4" value="Analisis"/>analisis</td>
+                </tr>
+                <tr>
+                    <th align="right">Descríbe tu trabajo ideal: </th>
+                    <td><textarea id="describete" name="describete" minlength="40" maxlength="100" required></textarea></td>
+                </tr>
+                <tr>
+                    <th align="right">Notificaciones: </th>
+                    <td><input type="checkbox" id="horns" name="Si" checked/>Sí quiero notificaciones<br/>
+                        <input type="checkbox" id="horns" name="No"/>No quiero notificaciones</td>
+                </tr>
+                <tr>
+                    <th align="right">Del 1 al 10, ¿Que tanto te gusta la carrera?: </th>
+                    <td>1<input type="range" min="1" max="10" step="1">10</td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
